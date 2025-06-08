@@ -1,41 +1,48 @@
-#SMEMCS - Smart Multi-Environmental Monitoring and Control System 
+# SMEMCS – Smart Multi-Environmental Monitoring and Control System
 
-##Overview 
+## Overview
 
-A lot of indoor environemnts suffer from inadequate ventilation, air quality high noise and pollution levels. However, a lot of places in cities, subhurbs and infrastructure lack real-time environemental monitoring and automated response systems in case there is an issue that needs to be addressed. 
+Many indoor environments suffer from inadequate ventilation, poor air quality, and high noise or pollution levels. However, many places in cities, suburbs, and infrastructure lack real-time environmental monitoring and automated response systems to address these issues.
 
-SEMCS aims to provide a low cose portable environemntal monitoring solution that monistors key environmental parameters (lighting, air quality, sound, temperature, humidity), detecting unsafe levels for each of these conditions, respond to these conditions using fan, buzzer, visual display, and logging data for collection, analysis, and calibration. This can be utilized or the technology can be expanded to integrate into iOT platforms similar to NEST. 
+SMEMCS aims to provide a low-cost, portable environmental monitoring solution that:
+- Monitors key environmental parameters (lighting, air quality, sound, temperature, humidity)
+- Detects unsafe levels for each condition
+- Responds using a fan, buzzer, and OLED display
+- Logs data for collection, analysis, and calibration
 
+This system can be used as-is or expanded into IoT platforms similar to NEST.
 
-The folders are as follows 
--> firmware -> Arduino code (.ino files) and files for testing (in the utils folder)
--> hardware -> photos, schematics, and parts list
--> logs -> raw and summarized sensor logs 
--> docs -> project notes, diagrams, and planning documents, schematics 
--> media -> photos/videos for demo and presentation. 
+## Folder Structure
 
+- `/firmware` – Arduino code (.ino files) and utilities (`/utils`)
+- `/hardware` – Schematics, wiring photos, parts list
+- `/logs` – Raw and summarized sensor logs
+- `/docs` – Planning notes, diagrams, final report
+- `/media` – Photos/videos for demo and presentation
 
-The hardware components used so far is the following
-##Hardware Components 
-    - KY-038 (Sound Sensor)
-    - LDR (Light Detector)
-    - Arduino Uno (Microcontroller)
-    - DHT22 (Temperature/humidity sensor)
-    - MQ135 (Gas Sensor)
-    - Breadboard
-    - LM358 Op - Amp
-    - IRF540 N-Channel MOSFET 
-    - Flyback Diode 
-    - Buzzer 
-    - LED
-    - OLED
-    - DC Fan 
-    - Buck Converter (LM2596) 
-    - TVS Diode 
-    - Power Supply 
-    - USB Cable 
-    - Jumper Wires
-    - Resistors 
-    - Capacitors 
+## Hardware Components
 
-Initial sensor tests for the LDR and DHT22 showed stable results using Arduino’s .ino sketches. Further details and analysis will be included in the final report available in the /docs/ folder.
+- KY-038 (Sound Sensor)
+- LDR (Light Detector)
+- Arduino Uno (Microcontroller)
+- DHT22 (Temperature/Humidity Sensor)
+- MQ135 (Gas Sensor)
+- Breadboard
+- LM358 Op-Amp
+- IRF540N N-Channel MOSFET
+- Flyback Diode
+- Buzzer
+- LED
+- OLED Display
+- DC Fan
+- Buck Converter (LM2596)
+- TVS Diode
+- Power Supply
+- USB Cable
+- Jumper Wires
+- Resistors
+- Capacitors
+
+## Notes
+
+Initial sensor tests for the LDR and DHT22 showed stable results using Arduino `.ino` sketches. Further analysis will be included in the final report in the `/docs/` folder.
