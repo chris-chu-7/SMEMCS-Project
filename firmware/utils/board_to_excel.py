@@ -4,7 +4,7 @@ import serial
 #configuration
 COM_PORT = 'COM5'
 BAUD_RATE = 9600
-CSV_PATH = r'C:\Users\chris\Documents\SMEMCS\sensor_test\sensor_log.csv'
+CSV_PATH = r'C:\Users\chris\Documents\SMEMCS\logs\sensor_log.csv'
 
 #Open serial port, write to the csv file (this is listened to in python after the code is uploaded in arduino )
 open_serial = serial.Serial(COM_PORT, BAUD_RATE, timeout=1)

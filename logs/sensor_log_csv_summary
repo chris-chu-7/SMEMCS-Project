@@ -1,0 +1,26 @@
+Based on the sensor test results, both the DHT22 and LDR sensors demonstrated consistent and reliable performance under controlled conditions.
+
+Sensor Averages:
+Average Temperature: 61.26 °F
+Average Humidity: 88.09 %
+Average LDR: 53.29 %
+
+To ensure compatibility with key Python libraries such as matplotlib, pandas, scipy, and statsmodels, the NumPy version was downgraded to 1.26.4. This was necessary due to compatibility issues caused by the breaking changes introduced in NumPy 2.x, which affected the behavior of compiled packages.
+
+The DHT22 sensor was tested for responsiveness to changes in humidity and temperature:
+
+Humidity Test: Breathing near the sensor increased the humidity from approximately 85% to 90%.
+
+Temperature Test: The temperature reading rose from around 60°F to nearly 90°F during the same action.
+The sensor was connected with a pull-up resistor, which contributed to stable and accurate readings. These results confirm that the DHT22 was functioning correctly and responding appropriately to environmental changes.
+
+LDR Sensor Test The Light-Dependent Resistor (LDR) was evaluated under varying lighting conditions:
+Covered (dark conditions): Output dropped to approximately 3%.
+Exposed to a fluorescent bulb: Output increased to 94–95%.
+Ambient indoor lighting: Output stabilized around 50%.
+
+These results confirm that the LDR accurately reflects changes in light intensity and is functioning as expected.
+
+Data and Visualization
+A graphical representation of the sensor data is available in:
+sensorlog.png – time-series plot of sensor values.
